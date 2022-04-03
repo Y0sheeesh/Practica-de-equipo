@@ -1,14 +1,3 @@
-function validar(e){
-    var teclado = (document.all)?e.KeyCode : e.which
-
-    if(teclado==8) return true;
-    var patron = /[0-9\d .]/;
-
-    var probar = String.fromCharCode(teclado);
-
-    return patron.test(probar);
-}
-
 function problema1(){
     var p1_input = document.querySelector('#p1-input').value;
     var p1_input2 = document.querySelector('#p1-input2').value;
